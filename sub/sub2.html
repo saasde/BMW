@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/models.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>   
+    <script src="../js/jquery.easing.1.3.js"></script>   
+    <script src="../js/jquery.easeScroll.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script async="" src="../js/js.js"></script>
+    <title>BMW</title>
+    <script type="text/javascript">       
+        $(document).ready(function(){ 
+            $("#foot").load("footer.html"); 
+        });
+    </script>
+</head>
+<body>
+<div class="top_gnb mot10">
+	<ul>
+		<li>
+			<a href="../index.html" onclick="eventTrack(&#39;gnb_story&#39;);" class="mot3">BMW 럭셔리 클래스</a>
+		</li>
+		<li>
+			<a href="./sub1.html" onclick="eventTrack(&#39;gnb_club&#39;);" class="mot3">BMW 엑설런스 클럽</a>
+		</li>
+		<li>
+			<a href="./sub3.html" onclick="eventTrack(&#39;gnb_models&#39;);" class="mot3 active">모델정보</a>
+		</li>
+		<li>
+			<a href="#" onclick="eventTrack(&#39;gnb_gallery&#39;);" class="mot3">갤러리</a>
+		</li>
+		<li class="mr16">
+			<a href="#" onclick="eventTrack(&#39;gnb_newsletter&#39;);" class="mot3 box_btn box_btn_newsletter">소식받기</a>
+		</li>
+		<li>
+			<a href="#" onclick="eventTrack(&#39;gnb_testdrive&#39;);" class="mot3 box_btn box_btn_testdrive">상담신청</a>
+		</li>
+	</ul>
+    </div>
+<div class="wrap thex7">
+    <div class="wrap_inner">
+        <!-- 팝업 exterior -->
+        <div class="pop pop_exterior">
+            <a href="javascript:void(0);" class="btn_prev btn_prev_exterior"></a>
+            <div class="pop_inner">
+                <ul class="exterior_tab">
+                    <li class="active mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">COLORS</span>
+                            <span class="tab_desc mot3">X7 색상</span>
+                        </a>
+                    </li>
+                    <li class="mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">WHEELS</span>
+                            <span class="tab_desc mot3">휠 종류</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pop_con_exterior">
+                    <div class="exterior_contents active contents_colors">
+                        <div class="select_car">
+                            <img src="../images/1/carX7_color1.jpg" class="now_car" alt="">
+                            <img src="../images/1/carX7_color1.jpg" class="next_car" alt="">
+                        </div>
+                        <div class="color_chip">
+                            <ul class="color_chip_ul"></ul>
+                            <div class="color_name_box"></div>
+                        </div>
+                    </div>
+                    <div class="exterior_contents contents_wheels">
+                        <div class="select_wheel">
+                            <img src="../images/1/carX7_wheel1.jpg" class="now_wheel" alt="">
+                            <img src="../images/1/carX7_wheel1.jpg" class="next_wheel" alt="">
+                        </div>
+                        <div class="wheel_chip">
+                            <ul class="wheel_chip_ul"></ul>
+                            <div class="wheel_name_box"></div>
+                        </div>
+                    </div>
+                    <div class="car_name">
+                        <div class="car_model en">BMW X7</div>
+                        <div class="car_model_detail en"></div>
+                    </div>
+                    <div class="text_etc">
+                        국내 출시 모델은 상이할 수 있으며, 국내 출시 시점에 상세 내역이 공개됩니다.
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn_next btn_next_exterior"></a>
+            <a href="javascript:modeilTheX.closePop();" class="pop_close mot3">CLOSE</a>
+        </div>
+    
+        <!-- 팝업 interior -->
+        <div class="pop pop_interior">
+            <a href="javascript:void(0);" class="btn_prev btn_prev_interior"></a>
+            <div class="pop_inner">
+                <ul class="interior_tab">
+                    <li class="active mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">UPHOLSTERY</span>
+                            <span class="tab_desc mot3">시트 색상</span>
+                        </a>
+                    </li>
+                    <li class="mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">TRIMS</span>
+                            <span class="tab_desc mot3">트림 종류</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pop_con_interior">
+                    <div class="interior_contents active contents_upholstery">
+                        <div class="select_upholstery">
+                            <img src="../images/1/carX7_upholstery1.jpg" class="now_upholstery" alt="">
+                            <img src="../images/1/carX7_upholstery1.jpg" class="next_upholstery" alt="">
+                        </div>
+                        <div class="upholstery_chip">
+                            <ul class="upholstery_chip_ul"></ul>
+                            <div class="upholstery_name_box"></div>
+                        </div>
+                    </div>
+                    <div class="interior_contents contents_trims">
+                        <div class="select_trims">
+                            <img src="../images/1/carX7_trims1.jpg" class="now_trims" alt="">
+                            <img src="../images/1/carX7_trims1.jpg" class="next_trims" alt="">
+                        </div>
+                        <div class="trims_chip">
+                            <ul class="trims_chip_ul"></ul>
+                            <div class="trims_name_box"></div>
+                        </div>
+                    </div>
+                    <div class="car_name">
+                        <div class="car_model en">BMW X7</div>
+                        <div class="car_model_detail en"></div>
+                    </div>
+                    <div class="text_etc">
+                        국내 출시 모델은 상이할 수 있으며, 국내 출시 시점에 상세 내역이 공개됩니다.
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn_next btn_next_interior"></a>
+            <a href="javascript:modeilTheX.closePop();" class="pop_close mot3">CLOSE</a>
+        </div>
+        
+        <!-- 팝업 영상 -->
+        <div class="pop pop_video">
+            <div class="pop_inner">
+                <ul class="video_tab">
+                    <li class="active mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">
+                                LANE KEEPING<br>
+                                ASSISTANT
+                            </span>
+                            <span class="tab_desc mot3">차선이탈방지</span>
+                        </a>
+                    </li>
+                    <li class="mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">
+                                ACTIVE SIDE<br>
+                                COLLISION<br>
+                                PROTECTION
+                            </span>
+                            <span class="tab_desc mot3">측면충돌방지</span>
+                        </a>
+                    </li>
+                    <li class="mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">
+                                REVERSING<br>
+                                ASSISTANT
+                            </span>
+                            <span class="tab_desc mot3">후진 어시스턴트</span>
+                        </a>
+                    </li>
+                    <li class="mot3">
+                        <a href="javascript:void(0);">
+                            <span class="tab_title mot3">
+                                ADAPTIVE<br>
+                                AIR SUSPENSION
+                            </span>
+                            <span class="tab_desc mot3">어댑티브 에어 서스펜션</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pop_con_video">
+                    <div class="video_contents active">
+                        <div class="video_box">
+                            <video id="video1" class="videoFrame" src="../images/video/1.mp4" poster="" loop="" muted=""></video>
+                        </div>
+                        <div class="video_text">
+                            드라이빙 어시스턴트 프로페셔널은 위험하거나 단조로운 주행 상황에서 운전자를 지원하며 편안한 주행을 책임집니다. 액티브 크루즈 컨트롤을 활용하여 <br>
+                            자동으로 앞 차량과의 간격을 유지할 수 있도록 속도를 조절하고, 차선 유지 어시스턴트는 차선을 이탈하는 것을 방지합니다.
+                        </div>
+                    </div>
+                    <div class="video_contents">
+                        <div class="video_box">
+                            <video id="video2" class="videoFrame" src="../images/video/2.mp4" poster="" loop="" muted=""></video>
+                        </div>
+                        <div class="video_text">
+                            더욱 안전한 주행을 도와주는 드라이빙 어시스턴트 프로페셔널로 측면 충돌 보호 기능을 포함한<br>
+                            차선 이탈 경고 시스템, 스티어링 기능 등을 제공합니다.
+                        </div>
+                    </div>
+                    <div class="video_contents">
+                        <div class="video_box">
+                            <video id="video3" ㄴclass="videoFrame" src="../images/video/3.mp4" poster="" loop="" muted=""></video>
+                        </div>
+                        <div class="video_text">
+                            후진 어시스턴트를 활용하면, 전진으로 진입한 동선을 따라 최대 35km/h 속도로 최대 50m까지 차량을 자동으로 후진시킬 수 있습니다.<br>
+                            좁은 공간이나 구불구불한 도로에서도 안전하게 후진할 수 있도록 도와줍니다.
+                        </div>
+                    </div>
+                    <div class="video_contents">
+                        <div class="video_box">
+                            <video id="video4" class="videoFrame" src="../images/video/4.mp4" poster="" loop="" muted=""></video>
+                        </div>
+                        <div class="video_text">
+                            어댑티브 프론트/리어 액슬 에어 서스펜션이 지휘자처럼 주행 상황에 맞게 차체 높이를 조절합니다. 센터 콘솔에서도 차체 높이를 5단계로 설정할 수 있으며,<br>
+                            오프로드 주행시에는 차체를 높이고, 역동적인 주행 시에는 차체를 낮추어 언제나 최고 수준의 편안함과 역동성을 동시에 제공합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:modeilTheX.closePop('video');" class="pop_close mot3">CLOSE</a>
+        </div>
+        
+        
+        <div class="video_top mot5 " style="opacity: 1;">
+            <video id="main_video" src="../images/video/sub2.mp4" poster="../images/1/w_main_poster.jpg" autoplay="" loop="" muted=""></video>
+            <div class="text_box thin" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                THE X7
+                
+            </div>
+            <div class="logo mot5 active" style="opacity: 1;">
+                <img class="logo_small" src="../images/logo_bmw_new.svg" alt="">
+            </div>
+            <div class="scroll_wrap mot5 active" style="opacity: 1;">
+                <div class="text">SCROLL TO EXPLORE</div>
+                <div class="scroll">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section middle_model_info">
+            <div class="section_sub_navi mot3">
+                <div class="sub_navi_inner">
+                    <ul>
+                        <li><a class="mot3 en active" href="javascript:;">EXTERIOR</a></li>
+                        <li><a class="mot3 en" href="javascript:;">INTERIOR</a></li>
+                        <li><a class="mot3 en" href="javascript:;">CONVENIENCE</a></li>
+                        <li><a class="mot3 en" href="javascript:;">DRIVING</a></li>
+                        <li class="right"><a class="mot3 en" href="javascript:;">THE X7</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_box section_exterior">
+                <div class="sec sec_intro_top">
+                    <div class="sec_inner">
+                        <div class="top_title thin" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">LUXURY MUST AROUSE EMOTIONS</div>
+                        <div class="top_sub_title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">압도적인 첫인상</div>
+                        <div class="top_line" style="height: 120px;"></div>
+                        <div class="top_etc" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">THE X7의 웅장한 익스테리어는 진보적이고 스포티한 스타일링으로 마무리되어<br>민첩함과 날렵함이 돋보입니다.</div>
+                    </div>
+                </div>
+                <div class="sec sec_video" style="opacity: 1;">
+                    <div class="sec_inner">
+                        <div class="video_area onScreen1">
+                            <video id="videoExterior" data-setup="{}" src="../images/video/exterior.mp4" loop="" muted="" playsinline="" autoplay="" preload="" poster="../images/1/w_exterior_poster.jpg"></video>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_deco_boco">
+                    <div class="sec_inner">
+                        <div class="deco_boco_inner fclear">
+                            <div class="thex_info_box info_box1 f_r">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img1_1.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">모든 이의 시선을 사로잡다</div>
+                                        <div class="txt_tit">액티브 에어스트림 키드니 그릴</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box2 f_l">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img1_2.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">강렬한 인상을 드러내는</div>
+                                        <div class="txt_tit">BMW 레이저 라이트</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        풀 LED 헤드라이트에 BMW만의 특별한 기술을 시각적으로 표현하는<br>
+                                        블루 색상의 X자 디자인 액센트와 BMW 레이저 레터링으로 특별함을 더합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box3 f_r">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img1_3.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">글로스 디자인으로 시선을 사로잡는 우아함</div>
+                                        <div class="txt_tit">22인치 경합금 휠</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box4 info_box_text f_l">
+                                <div class="info_box_line info_box_line1"></div>
+                                <div class="thex_info_tit">
+                                    THE X7이 럭셔리의 진화를<br>
+                                    새롭게 정의합니다.
+                                </div>
+                                <div class="info_box_line info_box_line2"></div>
+                                <div class="thex_info_from">조제프 카반, BMW 디자인 총괄</div>
+                            </div>
+                            <div class="link_testdrive f_l">
+                                <div class="testdrive_img_area">
+                                    <div class="mot_bg_area">
+                                        <div class="mot_bg1"></div>
+                                        <div class="mot_bg2"></div>
+                                    </div>
+                                    <img src="../images/1/testdrive_img1.jpg" alt="">
+                                </div>
+                                <div class="testdrive_copy_area">
+                                    <!--<a href="javascript:modeilTheX.showPop('pop_exterior');" class="learn_more">LEARN MORE</a> <a href="https://www.bmwluxuryclass.co.kr/testdrive.jsp" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>-->
+                                    THE X7을 지금 만나보십시오 <a href="#" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_visual_img">
+                    <div class="sec_inner">
+                        <div class="visual_img_area">
+                            <img src="../images/1/visual_img1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_box section_interior">
+                <div class="sec sec_intro_top">
+                    <div class="sec_inner">
+                        <div class="top_title thin">EMOTION EXPRESSED AS INNOVATION</div>
+                        <div class="top_sub_title">가장 아름답고 자유로운 공간</div>
+                        <div class="top_line"></div>
+                        <div class="top_etc">때때로 사람들은 특별한 경험을 꿈꿉니다. 높은 실용성이 특징인 여유 있는 실내 공간에서<br>운전자와 탑승객은 무한한 자유로움을 느낄 수 있으며, 3열 시트에서도 편안한 승차감을 즐길 수 있습니다. </div>
+                    </div>
+                </div>
+                <div class="sec sec_video">
+                    <div class="sec_inner">
+                        <div class="video_area onScreen2">
+                            <video muted="true" loop="true" id="videoInterior" data-setup="{}" src="../images/video/interior.mp4" playsinline="true" webkit-playsinline="true" preload="" poster="../images/1/w_exterior_poster.jpg" width="100%" height="100%" style="visibility: visible;"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_deco_boco">
+                    <div class="sec_inner ">
+                        <div class="deco_boco_inner fclear">
+                            <div class="thex_info_box info_box1 f_l">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img2_1.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">오뜨 꾸뛰르의 향연</div>
+                                        <div class="txt_tit">크리스탈 소재의 글래스 인테리어</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        시각과 촉각에 특별한 경험을 선사하는 클리스탈 글라스 아트로<br>
+                                        고급스러운 실내 분위기를 연출합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box2 f_r">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img2_2.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">꿈같은 뷰를 담아낸</div>
+                                        <div class="txt_tit">파노라마 글래스 루프 스카이 라운지</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        앰비언트 라이트의 색상과 함께 변하는 15,000여 개<br>
+                                        라이트 그래픽이 밤하늘을 아름답게 담아냅니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box3 f_l">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img2_3.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">더욱 고급스러워진</div>
+                                        <div class="txt_tit">새로운 디자인 컨셉의<br>공조시스템 및 조작부</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thex_info_box info_box4 info_box_text f_r">
+                                <div class="info_box_line info_box_line1"></div>
+                                <div class="thex_info_tit">
+                                    THE X7은 비교할 수 없는<br>
+                                    럭셔리한 주행과 품격 높은 실내로<br>
+                                    시선을 사로 잡습니다.
+                                </div>
+                                <div class="info_box_line info_box_line2"></div>
+                                <div class="thex_info_from">조제프 카반, BMW 디자인 총괄</div>
+                            </div>
+                            <div class="link_testdrive f_l">
+                                <div class="testdrive_img_area">
+                                    <div class="mot_bg_area">
+                                        <div class="mot_bg1"></div>
+                                        <div class="mot_bg2"></div>
+                                    </div>
+                                    <img src="../images/1/testdrive_img2.jpg" alt="">
+                                </div>
+                                <div class="testdrive_copy_area">
+                                    <!--<a href="javascript:modeilTheX.showPop('pop_interior');" class="learn_more">LEARN MORE</a> <a href="https://www.bmwluxuryclass.co.kr/testdrive.jsp" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>-->
+                                    THE X7을 지금 만나보십시오 <a href="#" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_visual_img">
+                    <div class="sec_inner">
+                        <div class="visual_img_area">
+                            <img src="../images/1/visual_img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_box section_convenience">
+                <div class="sec sec_intro_top">
+                    <div class="sec_inner">
+                        <div class="top_title thin" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">EXPERIENCE WITH ALL YOUR SENSES</div>
+                        <div class="top_sub_title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">사소한 디테일까지 연결되다</div>
+                        <div class="top_line" style="height: 120px;"></div>
+                        <div class="top_etc" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">비교할 수 없는 품격의 디테일로 세심하게 운전자와 탑승객 모두의 편의성을 높입니다.</div>
+                    </div>
+                </div>
+                <div class="sec sec_visual_img">
+                    <div class="sec_inner">
+                        <div class="visual_img_area">
+                            <img src="../images/1/convenience_top_img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_slide_area">
+                    <div class="slide_box">
+                        <ul class="slide_ul">
+                            <li class="active">
+                                <div class="info_box_img"><img src="../images/1/slide_img1.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">퍼스트 클래스와 같은 편안함</div>
+                                        <div class="txt_tit">2열시트 동작 방식</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        BMW 인디비주얼 메리노 가죽을 사용한 시트가 퍼스트 클래스와 같은<br>
+                                        넉넉한 공간으로 최상의 편안함을 선사합니다.
+                                    </div>
+                                </div>
+                                <div class="btn_slide"></div>
+                            </li>
+                            <li>
+                                <div class="info_box_img"><img src="../images/1/slide_img2.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">혁신적인 정보를 보여주는</div>
+                                        <div class="txt_tit">2개의 고해상도 12.3인치 대형 스크린</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        2개의 고해상도 12.3인치 대형 스크린으로 구성된 BMW 라이브 콕핏 프로페셔널이<br>
+                                        주행에 필요한 다양한 정보를 제공합니다.
+                                    </div>
+                                </div>
+                                <div class="btn_slide"></div>
+                            </li>
+                            <li>
+                                <div class="info_box_img"><img src="../images/1/slide_img3.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">쉽게 열고 닫을 수 있는</div>
+                                        <div class="txt_tit">전동식 트렁크</div>
+                                    </div>
+                                </div>
+                                <div class="btn_slide"></div>
+                            </li>
+                            <li>
+                                <div class="info_box_img"><img src="../images/1/slide_img4.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">더욱 편리해진</div>
+                                        <div class="txt_tit">컴포트 액세스</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        차량 키를 소지한 상태로 차량에 접근하면 자동으로 웰컴 라이트가 점등되고<br>
+                                        도어 잠금이 해제되어 탑승자를 맞이합니다.
+                                    </div>
+                                </div>
+                                <div class="btn_slide"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide_paging">
+                        <div class="slide_bar" style="width: 145px;"></div>
+                    </div>
+                    <div class="testdrive_copy_box">
+                        <div class="testdrive_copy_area">
+                            THE X7을 지금 만나보십시오 <a href="#" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_visual_img">
+                    <div class="sec_inner">
+                        <div class="visual_img_area">
+                            <img src="../images/1/visual_img3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_box section_driving">
+                <div class="sec sec_intro_top">
+                    <div class="sec_inner">
+                        <div class="top_title thin">THIS IS HOW EXCELLENCE IS DRIVEN</div>
+                        <div class="top_sub_title">도로 위의 완벽함을 경험하다</div>
+                        <div class="top_line"></div>
+                        <div class="top_etc">당신의 질주 본능을 자극합니다. 정교한 스티어링, 파워풀한 힘,<br>그리고 어떠한 길에서도 SAV가 선사할 수 있는 최고의 위엄을 모두 경험할 수 있습니다.</div>
+                    </div>
+                </div>
+                <div class="sec sec_visual_img">
+                    <div class="sec_inner">
+                        <div class="visual_img_area">
+                            <img src="../images/1/driving_top_img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec_deco_boco">
+                    <div class="sec_inner ">
+                        <div class="deco_boco_inner fclear">
+                            <a href="javascript:void(0);" class="thex_info_box info_box1 f_l btn_video_pop1">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img3_1.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">완벽한 높이를 맞춰주는</div>
+                                        <div class="txt_tit">어댑티브 에어 서스펜션</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        <div class="learn_more">LEARN MORE</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="thex_info_box info_box2 f_r btn_video_pop2">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img3_2.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">안전한 주행을 돕는</div>
+                                        <div class="txt_tit">드라이빙 어시스턴트 프로페셔널</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        <div class="learn_more">LEARN MORE</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="thex_info_box info_box3 f_l btn_video_pop3">
+                                <div class="info_box_img"><img src="../images/1/deco_boco_img3_3.jpg" alt=""></div>
+                                <div class="info_box_copy mot3">
+                                    <div class="info_box_copy_inner">
+                                        <div class="txt_sub">전진처럼 쉬운 후진</div>
+                                        <div class="txt_tit">후진 어시스턴트</div>
+                                    </div>
+                                    <div class="txt_etc">
+                                        <div class="learn_more">LEARN MORE</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="text_box f_l">
+                                단순히 지식과 능력, 선구자 정신을 보여주기 위함이 아닙니다.<br>
+                                주행의 즐거움을 극대화 하기 위한 노력입니다.
+                            </div>
+                            <div class="link_testdrive f_l">
+                                <div class="testdrive_img_area">
+                                    <div class="mot_bg_area">
+                                        <div class="mot_bg1"></div>
+                                        <div class="mot_bg2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bottom_etc" style="margin-top: 0;">
+            <div class="sec_etc_testdrive">
+                <div class="etc_testdrive_inner">
+                    <div class="testdrive_bg">
+                        <img src="../images/1/bottom_testdrive_bg.jpg" alt="">
+                    </div>
+                    <div class="testdrive_copy">
+                        <div class="copy_tit thin">THE X7</div>
+                        <div class="copy_sub">우아한 기함의 등장. BMW X7을 지금 만나보십시오.</div>
+                        <div class="copy_btn">
+                            <a href="#" onclick="eventTrack('x7_go_testdrive')" class="mot3">상담신청</a>
+                            <a href="https://www.bmw.co.kr/ko/all-models/x-range/X7/2018/inspire.html" target="_blank" onclick="eventTrack('models_thex7_feature_configurator')" class="mot3" style="margin-left: 19px">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="javascript:;" class="btn_top mot3">TOP</a>
+
+    </div>
+    <div id="foot"></div>
+</div>
+<script src="../js/ScrollMagic.min.js"></script>
+<script src="../js/models.js"></script>
+<script>
+    modeilTheX.init();
+</script>
+</body>
+</html>

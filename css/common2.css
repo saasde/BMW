@@ -1,0 +1,232 @@
+body {
+    color: #333;
+    background: #000;
+}
+.wrap {
+    min-width: 1280px;
+    position: relative;
+}
+.art_top {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.text_box {
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -450px;
+    z-index: 2;
+    text-align: center;
+}
+.text_box .text1.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.text_box .text2.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mot10 {
+    transition: all 1s;
+}
+.mot5 {
+    transition: all 0.5s ease-out;
+}
+.text_box .text1 {
+    font-size: 60px;
+    color: #fff;
+    line-height: 65px;
+    margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(100px);
+    letter-spacing: 6px;
+}
+.text_box .text2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    opacity: 0;
+    transform: translateY(80px);
+    letter-spacing: 2px;
+}
+.logo.active {
+    opacity: 1;
+}
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    opacity: 0;
+    z-index: 2
+}
+.logo_small {
+    width: 48px;
+    height: 48px;
+}
+.scroll_wrap.active {
+    opacity: 1;
+}
+.scroll_wrap {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -100px;
+    opacity: 0;
+    z-index: 2;
+}
+.scroll_wrap .text {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.scroll_wrap .scroll {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.scroll_wrap .scroll:before {
+    content: '';
+    width: 18px;
+    height: 38px;
+    border: 1px solid #fff;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+.scroll_wrap .scroll .dot {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin: -2px 0 0 -2px;
+    animation: bounceArrow 2.4s cubic-bezier(.7,0,.3,1) infinite forwards;
+}
+@keyframes bounceArrow {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(7px);}
+    100%{transform: translateY(0px);}
+}
+.main_bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    overflow: hidden;
+}
+.main_bg .main_slide_bg.bg1 {
+    background: url(../images/club_bg.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+.main_bg .main_slide_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.club .sec_wrap {
+    position: relative;
+    margin-bottom: 200px;
+}
+.club .sec_inner {text-align: center;}
+.club .sec_inner .top_title {
+    font-size: 38px;
+    color: rgba(255,255,255,0.5);
+    padding-top: 200px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.club .sec_inner .top_line {
+    width: 1px;
+    height: 120px;
+    background: url(../images/sec_top_line.png) no-repeat center;
+    overflow: hidden;
+    margin: 50px auto 80px
+}
+.club .sec_inner .top_etc {
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 100;
+}
+.club .video_area {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.club .top_title2 {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 200px;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.club .sec_box_wrap {
+    width: 1020px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.club .sec_box_wrap .sec_box_ul {
+    width: 480px;
+    float: left;
+}
+.club .sec_box_wrap .sec_box_ul:first-child {    margin-right: 60px;}
+.club .sec_box_wrap .sec_box_ul li {
+    position: relative;
+    padding: 30px 30px 30px 15px;
+    border-bottom: 1px solid #808080;
+}
+.club .sec_box_wrap .sec_box_ul li:first-child {border-top: 1px solid #808080;}
+.club .sec_box_wrap .sec_box_ul li .category {
+    width: 130px;
+    height: 34px;
+    background: #1a1a1a;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 15px;
+}
+.club .sec_box_wrap .sec_box_ul li .title {
+    font-size: 24px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.club .sec_box_wrap .sec_box_ul li .title_en {
+    font-size: 14px;
+    color: #858585;
+    line-height: 14px;
+}
+.club .sec_box_wrap .sec_box_ul li .btn_box {
+    width: 19px;
+    height: 19px;
+    background: url(../images/ico_plus.jpg) no-repeat 0 0;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+}
+.club .sec_box_wrap .sec_box_ul li .hidden_box {
+    display: none;
+    font-size: 13px;
+    color: #9c9c9c;
+    line-height: 26px;
+    padding-top: 30px;
+}
