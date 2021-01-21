@@ -1,6 +1,7 @@
 .pop_exterior {
     padding-top: 90px;
 }
+
 .pop {
     position: fixed;
     left: 0;
@@ -12,6 +13,7 @@
     z-index: 11;
     overflow-y: auto;
 }
+
 .pop .btn_prev {
     width: 50px;
     height: 50px;
@@ -21,32 +23,49 @@
     margin-top: -25px;
     background: url(../images/ico_prev.png) no-repeat center 20px #000;
 }
+
 .pop .pop_inner {
     width: 1024px;
     margin: 0 auto;
     height: 830px;
     position: relative;
 }
+
 .pop_exterior .exterior_tab {
     width: 980px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
-.pop_exterior .exterior_tab li.active {width: 580px;}
-.pop_exterior .exterior_tab li:first-child {margin-right: 20px;}
+
+.pop_exterior .exterior_tab li.active {
+    width: 580px;
+}
+
+.pop_exterior .exterior_tab li:first-child {
+    margin-right: 20px;
+}
+
 .pop_exterior .exterior_tab li {
     width: 380px;
     float: left;
 }
-.pop_exterior .exterior_tab li.active a {border-top: 1px solid #fff;}
+
+.pop_exterior .exterior_tab li.active a {
+    border-top: 1px solid #fff;
+}
+
 .pop_exterior .exterior_tab li a {
     display: block;
     border-top: 1px solid #414141;
     padding: 18px 0 0 10px;
     font-size: 0;
 }
-.pop_exterior .exterior_tab li.active a .tab_title {color: #fff;}
+
+.pop_exterior .exterior_tab li.active a .tab_title {
+    color: #fff;
+}
+
 .pop_exterior .exterior_tab li a .tab_title {
     display: inline-block;
     font-size: 18px;
@@ -54,7 +73,11 @@
     line-height: 18px;
     color: #5f5f5f;
 }
-.pop_exterior .exterior_tab li.active a .tab_desc {opacity: 1;}
+
+.pop_exterior .exterior_tab li.active a .tab_desc {
+    opacity: 1;
+}
+
 .pop_exterior .exterior_tab li a .tab_desc {
     display: inline-block;
     font-size: 14px;
@@ -62,20 +85,35 @@
     opacity: 0;
     color: #707070;
 }
+
 .pop_exterior .pop_con_exterior {
     height: 630px;
     position: relative;
 }
-.pop_exterior .pop_con_exterior .exterior_contents.active {display:block;}
-.pop_exterior .pop_con_exterior .contents_colors {margin-top: 90px;}
-.pop_exterior .pop_con_exterior .exterior_contents {display: none;}
+
+.pop_exterior .pop_con_exterior .exterior_contents.active {
+    display: block;
+}
+
+.pop_exterior .pop_con_exterior .contents_colors {
+    margin-top: 90px;
+}
+
+.pop_exterior .pop_con_exterior .exterior_contents {
+    display: none;
+}
+
 .pop_exterior .pop_con_exterior .contents_colors .select_car {
     width: 980px;
     height: 380px;
     position: relative;
     margin: 0 auto;
 }
-.pop_exterior .pop_con_exterior .contents_colors .select_car .now_car {position: relative;}
+
+.pop_exterior .pop_con_exterior .contents_colors .select_car .now_car {
+    position: relative;
+}
+
 .pop_exterior .pop_con_exterior .contents_colors .select_car .next_car {
     position: absolute;
     left: 0;
@@ -83,16 +121,19 @@
     z-index: 2;
     display: none;
 }
+
 .pop_exterior .pop_con_exterior .contents_colors .color_chip {
     overflow: hidden;
     text-align: right;
     margin-top: 80px;
 }
+
 .pop_exterior .pop_con_exterior .contents_colors .color_chip .color_chip_ul {
     overflow: hidden;
     text-align: right;
     display: inline-block;
 }
+
 .pop_exterior .pop_con_exterior .contents_colors .color_chip .color_name_box {
     width: 100%;
     height: 16px;
@@ -105,13 +146,18 @@
     color: #fff;
     line-height: 16px;
 }
+
 .pop_exterior .pop_con_exterior .contents_wheels .select_wheel {
     width: 980px;
     height: 380px;
     position: relative;
     margin: 0 auto;
 }
-.pop_exterior .pop_con_exterior .contents_wheels .select_wheel .now_wheel {position: relative;}
+
+.pop_exterior .pop_con_exterior .contents_wheels .select_wheel .now_wheel {
+    position: relative;
+}
+
 .pop_exterior .pop_con_exterior .contents_wheels .select_wheel .next_wheel {
     position: absolute;
     left: 0;
@@ -119,11 +165,13 @@
     z-index: 2;
     display: none;
 }
+
 .pop_exterior .pop_con_exterior .contents_wheels .wheel_chip .wheel_chip_ul {
     overflow: hidden;
     text-align: right;
     display: inline-block;
 }
+
 .pop_exterior .pop_con_exterior .contents_wheels .wheel_chip .wheel_name_box {
     width: 100%;
     height: 16px;
@@ -136,6 +184,7 @@
     color: #fff;
     line-height: 16px;
 }
+
 .car_name {
     position: absolute;
     left: 10px;
@@ -143,13 +192,16 @@
     font-size: 30px;
     line-height: 36px;
 }
+
 .car_name .car_model {
     color: #fff;
 }
+
 .car_name .car_model_detail {
     height: 72px;
     color: #565656;
 }
+
 .text_etc {
     position: absolute;
     right: 0;
@@ -157,6 +209,7 @@
     font-size: 12px;
     color: #666;
 }
+
 .pop .btn_next {
     width: 50px;
     height: 50px;
@@ -166,6 +219,7 @@
     margin-top: -25px;
     background: url(../images/ico_next.png) no-repeat center 20px #000;
 }
+
 .pop .pop_close {
     position: fixed;
     right: 50px;
@@ -175,30 +229,42 @@
     color: #fff;
     line-height: 28px;
 }
+
 .pop_interior .interior_tab {
     width: 980px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
-.pop_interior .interior_tab li.active {width: 580px;}
-.pop_interior .interior_tab li:first-child {margin-right: 20px;}
+
+.pop_interior .interior_tab li.active {
+    width: 580px;
+}
+
+.pop_interior .interior_tab li:first-child {
+    margin-right: 20px;
+}
+
 .pop_interior .interior_tab li {
     width: 380px;
     float: left;
 }
+
 .pop_interior .interior_tab li.active a {
     border-top: 1px solid #fff;
 }
+
 .pop_interior .interior_tab li a {
     display: block;
     border-top: 1px solid #414141;
     padding: 18px 0 0 10px;
     font-size: 0;
 }
+
 .pop_interior .interior_tab li.active a .tab_title {
     color: #fff;
 }
+
 .pop_interior .interior_tab li a .tab_title {
     display: inline-block;
     font-size: 18px;
@@ -206,9 +272,11 @@
     line-height: 18px;
     color: #5f5f5f;
 }
+
 .pop_interior .interior_tab li.active a .tab_desc {
     opacity: 1;
 }
+
 .pop_interior .interior_tab li a .tab_desc {
     display: inline-block;
     font-size: 14px;
@@ -216,20 +284,35 @@
     opacity: 0;
     color: #707070;
 }
+
 .pop_interior .pop_con_interior {
     height: 630px;
     position: relative;
 }
-.pop_interior .pop_con_interior .interior_contents.active {display: block;}
-.pop_interior .pop_con_interior .contents_upholstery {margin-top: 90px;}
-.pop_interior .pop_con_interior .interior_contents {display: none;}
+
+.pop_interior .pop_con_interior .interior_contents.active {
+    display: block;
+}
+
+.pop_interior .pop_con_interior .contents_upholstery {
+    margin-top: 90px;
+}
+
+.pop_interior .pop_con_interior .interior_contents {
+    display: none;
+}
+
 .pop_interior .pop_con_interior .contents_upholstery .select_upholstery {
     width: 980px;
     height: 380px;
     position: relative;
     margin: 0 auto;
 }
-.pop_interior .pop_con_interior .contents_upholstery .select_upholstery .now_upholstery {position: relative;}
+
+.pop_interior .pop_con_interior .contents_upholstery .select_upholstery .now_upholstery {
+    position: relative;
+}
+
 .pop_interior .pop_con_interior .contents_upholstery .select_upholstery .next_upholstery {
     position: absolute;
     left: 0;
@@ -237,16 +320,19 @@
     z-index: 2;
     display: none;
 }
+
 .pop_interior .pop_con_interior .contents_upholstery .upholstery_chip {
     overflow: hidden;
     text-align: right;
     margin-top: 80px;
 }
+
 .pop_interior .pop_con_interior .contents_upholstery .upholstery_chip .upholstery_chip_ul {
     overflow: hidden;
     text-align: right;
     display: inline-block;
 }
+
 .pop_interior .pop_con_interior .contents_upholstery .upholstery_chip .upholstery_name_box {
     width: 100%;
     height: 16px;
@@ -259,15 +345,26 @@
     color: #fff;
     line-height: 16px;
 }
-.pop_interior .pop_con_interior .contents_trims {margin-top: 90px;}
-.pop_interior .pop_con_interior .interior_contents {display: none;}
+
+.pop_interior .pop_con_interior .contents_trims {
+    margin-top: 90px;
+}
+
+.pop_interior .pop_con_interior .interior_contents {
+    display: none;
+}
+
 .pop_interior .pop_con_interior .contents_trims .select_trims {
     width: 980px;
     height: 380px;
     position: relative;
     margin: 0 auto;
 }
-.pop_interior .pop_con_interior .contents_trims .select_trims .now_trims {position: relative;}
+
+.pop_interior .pop_con_interior .contents_trims .select_trims .now_trims {
+    position: relative;
+}
+
 .pop_interior .pop_con_interior .contents_trims .select_trims .next_trims {
     position: absolute;
     left: 0;
@@ -275,16 +372,19 @@
     z-index: 2;
     display: none;
 }
+
 .pop_interior .pop_con_interior .contents_trims .trims_chip {
     overflow: hidden;
     text-align: right;
     margin-top: 80px;
 }
+
 .pop_interior .pop_con_interior .contents_trims .trims_chip .trims_chip_ul {
     overflow: hidden;
     text-align: right;
     display: inline-block;
 }
+
 .pop_interior .pop_con_interior .contents_trims .trims_chip .trims_name_box {
     width: 100%;
     height: 16px;
@@ -297,21 +397,36 @@
     color: #fff;
     line-height: 16px;
 }
-.pop_video {padding-top: 90px;}
+
+.pop_video {
+    padding-top: 90px;
+}
+
 .pop_video .video_tab {
     width: 980px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
-.pop_video .video_tab li.active {width: 350px;}
-.pop_video .video_tab li:first-child {margin-right: 20px;}
+
+.pop_video .video_tab li.active {
+    width: 350px;
+}
+
+.pop_video .video_tab li:first-child {
+    margin-right: 20px;
+}
+
 .pop_video .video_tab li {
     width: 190px;
     float: left;
     margin-right: 20px;
 }
-.pop_video .video_tab li.active a {border-top: 1px solid #fff;}
+
+.pop_video .video_tab li.active a {
+    border-top: 1px solid #fff;
+}
+
 .pop_video .video_tab li a {
     display: block;
     border-top: 1px solid #414141;
@@ -319,7 +434,11 @@
     font-size: 0;
     position: relative;
 }
-.pop_video .video_tab li.active a .tab_title {color: #fff;}
+
+.pop_video .video_tab li.active a .tab_title {
+    color: #fff;
+}
+
 .pop_video .video_tab li a .tab_title {
     display: inline-block;
     font-size: 17px;
@@ -327,14 +446,27 @@
     color: #5f5f5f;
     vertical-align: top;
 }
+
 .pop_video .video_tab li.active a .tab_desc {
     opacity: 1;
     display: inline-block;
 }
-.pop_video .video_tab li:nth-child(1) a .tab_desc {left: 180px;}
-.pop_video .video_tab li:nth-child(2) a .tab_desc {left: 170px;}
-.pop_video .video_tab li:nth-child(3) a .tab_desc {left: 150px;}
-.pop_video .video_tab li:nth-child(4) a .tab_desc {left: 180px;}
+
+.pop_video .video_tab li:nth-child(1) a .tab_desc {
+    left: 180px;
+}
+
+.pop_video .video_tab li:nth-child(2) a .tab_desc {
+    left: 170px;
+}
+
+.pop_video .video_tab li:nth-child(3) a .tab_desc {
+    left: 150px;
+}
+
+.pop_video .video_tab li:nth-child(4) a .tab_desc {
+    left: 180px;
+}
 
 .pop_video .video_tab li a .tab_desc {
     width: 150px;
@@ -346,20 +478,35 @@
     opacity: 0;
     color: #707070;
 }
-.pop_video .pop_con_video .video_contents.active {display: block;}
-.pop_video .pop_con_video .video_contents {display: none;}
+
+.pop_video .pop_con_video .video_contents.active {
+    display: block;
+}
+
+.pop_video .pop_con_video .video_contents {
+    display: none;
+}
+
 .pop_video .pop_con_video .video_contents .video_box {
     width: 100%;
     height: 630px;
 }
-.pop_video .pop_con_video .video_contents .video_box video {width: 100%;}
+
+.pop_video .pop_con_video .video_contents .video_box video {
+    width: 100%;
+}
+
 .pop_video .pop_con_video .video_contents .video_text {
     font-size: 14px;
     color: #fff;
     text-align: center;
     line-height: 26px;
 }
-.thex7 .video_top {opacity: 0;}
+
+.thex7 .video_top {
+    opacity: 0;
+}
+
 .thex7 .video_top {
     width: 100%;
     height: 100vh;
@@ -368,10 +515,12 @@
     position: relative;
     z-index: 9;
 }
+
 .thex7 .video_top .text_box {
     opacity: 0;
     transform: translateY(30px);
 }
+
 .thex7 .video_top .text_box {
     font-size: 100px;
     color: #fff;
@@ -384,6 +533,7 @@
     z-index: 2;
     letter-spacing: 2px;
 }
+
 /*
 .thex7 .video_top .logo {opacity: 0;}
 .thex7 .video_top .logo {
@@ -408,4 +558,6 @@
     letter-spacing: 3px;
     margin-bottom: 20px;
 }*/
-.thex7 .section {position: relative;}
+.thex7 .section {
+    position: relative;
+}
